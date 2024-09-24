@@ -1,0 +1,14 @@
+import * as readline from 'node:readline/promises';
+import{stdin as input, stdout as output} from 'node:process';
+const userInput = readline.createInterface({input, output});
+
+let name = await userInput.question('Wat is je naam? ');
+console.log(name);
+
+let age = await userInput.question('Wat is je leeftijd? ');
+console.log(age);
+
+let favoriteGame = await userInput.question('Wat is je lievelingsgame? ');
+console.log(favoriteGame);
+
+console.log('Hallo '+ name +', ik hoor dat je '+ age +' jaar oud bent en dat je lievelingsgame '+ favoriteGame +' is.');
