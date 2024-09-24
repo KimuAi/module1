@@ -5,6 +5,7 @@ const userInput = readline.createInterface({input, output});
 let geboorteJaar = parseFloat(await userInput.question('Wat is je geboorteJaar? '));
 console.log(geboorteJaar);
 
-let toekomstJaar = 2031 - geboorteJaar;
+let toekomstJaar = parseFloat(await userInput.question('Wat is je toekomstJaar? '));
+console.log(toekomstJaar);
 
-console.log("In 2031 zult u " + toekomstJaar + "jaar zijn");
+console.log("In 2031 zult u " + (toekomstJaar - geboorteJaar) + " of " + (toekomstJaar - geboorteJaar + 1) + " jaar zijn");
