@@ -5,7 +5,7 @@ const userInput = readline.createInterface({input, output});
 let name = await userInput.question('Wat is je naam? ');
 console.log(name);
 
-let age = await userInput.question('Wat is je leeftijd? ');
+let age = parseFloat(await userInput.question('Wat is je leeftijd? '));
 console.log(age);
 
 let favoriteGame = await userInput.question('Wat is je lievelingsgame? ');
