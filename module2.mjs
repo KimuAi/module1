@@ -8,4 +8,4 @@ console.log(geboorteJaar);
 let toekomstJaar = parseFloat(await userInput.question('Wat is je toekomstJaar? '));
 console.log(toekomstJaar);
 
-console.log("In 2031 zult u " + (toekomstJaar - geboorteJaar) + " of " + (toekomstJaar - geboorteJaar + 1) + " jaar zijn");
+console.log("In de toekomst bent u " + (toekomstJaar - geboorteJaar) + " of " + (toekomstJaar - geboorteJaar + 1) + " jaar zijn");
